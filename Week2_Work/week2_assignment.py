@@ -52,7 +52,7 @@ def secant_method(f, x0, x1, tol=1e-5, max_iter=100):
         if abs(f_x1 - f_x0) < 1e-12:
             print("Small denominator. No solution found.")
             return None
-        x2 = x1 - f_x1 * (x1 - x0) / (f_x1 - f_x0)
+        x2 = x1 - (f_x1 * (x1 - x0) / (f_x1 - f_x0))
         if abs(f(x2)) < tol:
             return x2
         x0, x1 = x1, x2
