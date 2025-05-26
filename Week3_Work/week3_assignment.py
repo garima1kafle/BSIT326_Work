@@ -121,5 +121,3 @@ print("Vector b after partial pivot:\n", b)
 solution = gauss_seidel(A, b, x0)
 
 print("\nFinal Solution:", solution)
-
-# %%
